@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #34445c;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.line {
+    width: 180px;
+    height: 4px;
+    background: #3498db;
+    margin-bottom: 65px;
+    border-radius: 5px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 2;
+    color: #555;
+    margin-bottom: 70px;
+}
+
+.project {
+    margin-top: 30px;
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #34445c;
+}
+
+.project p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #217dbb;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <section class="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <div class="line"></div>
+
+        <p>
+            สวัสดีครับ ฉันมีความสนใจในการพัฒนาซอฟต์แวร์
+            และเทคโนโลยีใหม่ๆ ชอบเรียนรู้การเขียนโค้ด
+            เพื่อแก้ปัญหาและสร้างสรรค์ผลงานที่เป็นประโยชน์
+        </p>
+    </section>
+
+    <section>
+        <h2>ผลงานของฉัน</h2>
+        <div class="line"></div>
+
+        <div class="project">
+            <h3>โปรเจกต์ที่ 1: แอปพลิเคชันจัดการงาน</h3>
+
+            <p>
+                คำอธิบาย: โปรเจกต์นี้สร้างขึ้นมาเพื่อช่วยจัดการ
+                ตารางงานประจำวัน พัฒนาด้วย HTML CSS และ JavaScript
+            </p>
+
+            <button onclick="showProject()">
+                ดูรายละเอียดผลงาน
+            </button>
+        </div>
+
+    </section>
+
+</div>
+
+<script>
+function showProject() {
+    alert("นี่คือรายละเอียดโปรเจกต์ของฉัน!");
+}
+</script>
+
+</body>
+</html>
