@@ -3,6 +3,7 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Portfolio</title>
 
 <style>
@@ -21,6 +22,24 @@ body {
     border-radius: 10px;
 }
 
+.profile {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 28%;
+    border: 4px solid #3498db;
+}
+
+.profile h1 {
+    color: #2980b9;
+}
+
 h2 {
     color: #34445c;
 }
@@ -30,11 +49,6 @@ h2 {
     height: 4px;
     background: #3498db;
     margin-bottom: 40px;
-}
-
-.name {
-    font-size: 30px;
-    color: #2980b9;
 }
 
 p {
@@ -55,6 +69,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+button:hover {
+    background: #217dbb;
+}
 </style>
 </head>
 
@@ -62,37 +80,53 @@ button {
 
 <div class="container">
 
+    <!-- รูปโปรไฟล์ -->
+    <div class="profile">
+        <img src="profile.jpg" alt="รูปของฉัน">
+
+        <h1>ชื่อ - นามสกุล</h1>
+        <p>นักศึกษา แผนกเทคโนโลยีสารสนเทศ</p>
+    </div>
+
+    <!-- เกี่ยวกับฉัน -->
     <h2>เกี่ยวกับฉัน</h2>
     <div class="line"></div>
 
-    <h1 class="name">ชื่อ: วสุพล ใจกล้า</h1>
-
-    <p>ชื่อเล่น: แซน</p>
-    <p>อายุ: 16</p>
+    <p>ชื่อเล่น: ใส่ชื่อเล่น</p>
+    <p>อายุ: ใส่อายุ</p>
+    <p>สถานศึกษา: ใส่ชื่อวิทยาลัย</p>
     <p>แผนกวิชา: เทคโนโลยีสารสนเทศ</p>
 
     <p>
-    สวัสดีครับ ผมมีความสนใจในการพัฒนาซอฟต์แวร์
-    และเทคโนโลยีใหม่ๆ ชอบเรียนรู้การเขียนโค้ด
-    เพื่อสร้างสรรค์ผลงานที่เป็นประโยชน์
+        สวัสดีครับ ผมมีความสนใจในการพัฒนาซอฟต์แวร์
+        และเทคโนโลยีใหม่ๆ ชอบเรียนรู้การเขียนโค้ด
+        เพื่อแก้ปัญหาและสร้างสรรค์ผลงานที่เป็นประโยชน์
     </p>
 
+    <!-- ผลงาน -->
     <h2>ผลงานของฉัน</h2>
     <div class="line"></div>
 
     <div class="project">
         <h3>โปรเจกต์ที่ 1: แอปพลิเคชันจัดการงาน</h3>
+
         <p>
-        สร้างเว็บไซต์สำหรับช่วยจัดการตารางงานประจำวัน
-        พัฒนาด้วย HTML CSS และ JavaScript
+            โปรเจกต์นี้สร้างขึ้นมาเพื่อช่วยจัดการตารางงาน
+            ประจำวัน พัฒนาด้วย HTML CSS และ JavaScript
         </p>
 
-        <button onclick="alert('นี่คือผลงานของฉัน')">
+        <button onclick="showProject()">
             ดูรายละเอียดผลงาน
         </button>
     </div>
 
 </div>
+
+<script>
+function showProject() {
+    alert("นี่คือรายละเอียดผลงานของฉัน!");
+}
+</script>
 
 </body>
 </html>
